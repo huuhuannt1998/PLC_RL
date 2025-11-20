@@ -1,0 +1,20 @@
+MODULE main
+
+VAR
+  Machine : boolean;
+  StartButton : boolean;
+
+ASSIGN
+  init(Machine) := FALSE;
+  init(StartButton) := FALSE;
+
+  next(Machine) := case
+    StartButton : TRUE;
+    TRUE : Machine;
+  esac;
+
+
+-- Safety Properties
+LTLSPEC G (StartButton -> F Machine)
+  -- Property: If StartButton is pressed, Machine should eventually activate
+

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2025-11-19T10:30:00.000Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor>Control Systems</HeaderAuthor>
+      <HeaderFamily>Controllers</HeaderFamily>
+      <HeaderName>PID Controller</HeaderName>
+      <HeaderVersion>2.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Setpoint" Datatype="Real" />
+    <Member Name="ProcessValue" Datatype="Real" />
+    <Member Name="Kp" Datatype="Real" />
+    <Member Name="Ki" Datatype="Real" />
+    <Member Name="Kd" Datatype="Real" />
+    <Member Name="Enable" Datatype="Bool" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="ControlOutput" Datatype="Real" />
+    <Member Name="Error" Datatype="Real" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="IntegralSum" Datatype="Real" />
+    <Member Name="LastError" Datatype="Real" />
+    <Member Name="Initialized" Datatype="Bool" />
+  </Section>
+  <Section Name="Temp">
+    <Member Name="PropTerm" Datatype="Real" />
+    <Member Name="IntTerm" Datatype="Real" />
+    <Member Name="DiffTerm" Datatype="Real" />
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>true</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>FB_PID_Controller</Name>
+      <Number>20</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <SW.Blocks.CompileUnit ID="1" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+// PID Controller Implementation
+IF #Enable THEN
+    // Calculate error
+    #Error := #Setpoint - #ProcessValue;
+    
+    // Proportional term
+    #PropTerm := #Kp * #Error;
+    
+    // Integral term
+    #IntegralSum := #IntegralSum + #Error;
+    #IntTerm := #Ki * #IntegralSum;
+    
+    // Derivative term
+    IF #Initialized THEN
+        #DiffTerm := #Kd * (#Error - #LastError);
+    ELSE
+        #DiffTerm := 0.0;
+        #Initialized := TRUE;
+    END_IF;
+    
+    // Calculate control output
+    #ControlOutput := #PropTerm + #IntTerm + #DiffTerm;
+    
+    // Anti-windup
+    IF #ControlOutput &gt; 100.0 THEN
+        #ControlOutput := 100.0;
+        #IntegralSum := #IntegralSum - #Error;
+    ELSIF #ControlOutput &lt; 0.0 THEN
+        #ControlOutput := 0.0;
+        #IntegralSum := #IntegralSum - #Error;
+    END_IF;
+    
+    // Save error for next cycle
+    #LastError := #Error;
+ELSE
+    // Reset controller
+    #ControlOutput := 0.0;
+    #IntegralSum := 0.0;
+    #LastError := 0.0;
+    #Initialized := FALSE;
+END_IF;
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>PID controller with anti-windup protection</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="4" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>PID Control Algorithm</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

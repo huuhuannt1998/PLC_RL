@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Document xmlns:ns0="http://www.siemens.com/automation/Openness/SW/Interface/v5" xmlns:ns1="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2025-11-19T10:30:00.000Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor>Control Systems</HeaderAuthor>
+      <HeaderFamily>Controllers</HeaderFamily>
+      <HeaderName>PID Controller</HeaderName>
+      <HeaderVersion>2.1</HeaderVersion>
+      <Interface><ns0:Sections>
+  <ns0:Section Name="Input">
+    <ns0:Member Name="Setpoint" Datatype="Real" />
+    <ns0:Member Name="ProcessValue" Datatype="Real" />
+    <ns0:Member Name="Kp" Datatype="Real" />
+    <ns0:Member Name="Ki" Datatype="Real" />
+    <ns0:Member Name="Kd" Datatype="Real" />
+    <ns0:Member Name="Enable" Datatype="Bool" />
+  </ns0:Section>
+  <ns0:Section Name="Output">
+    <ns0:Member Name="ControlOutput" Datatype="Real" />
+    <ns0:Member Name="Error" Datatype="Real" />
+  </ns0:Section>
+  <ns0:Section Name="InOut" />
+  <ns0:Section Name="Static">
+    <ns0:Member Name="IntegralSum" Datatype="Real" />
+    <ns0:Member Name="LastError" Datatype="Real" />
+    <ns0:Member Name="Initialized" Datatype="Bool" />
+  </ns0:Section>
+  <ns0:Section Name="Temp">
+    <ns0:Member Name="PropTerm" Datatype="Real" />
+    <ns0:Member Name="IntTerm" Datatype="Real" />
+    <ns0:Member Name="DiffTerm" Datatype="Real" />
+  </ns0:Section>
+</ns0:Sections></Interface>
+      <IsIECCheckEnabled>true</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>FB_PID_Controller</Name>
+      <Number>20</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <SW.Blocks.CompileUnit ID="1" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><ns1:StructuredText>0.0 THEN0.0 THEN0.0 THEN0.0 THEN0.0 THEN0.0 THEN0.0 THEN0.00.00.0 THEN0.0;0.0;
+       0.0;
+       0.0;
+        #IntegralSum :=0.0;
+        #IntegralSum = 0.0;0.</ns1:StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>BUGS: Inverted error sign, no input validation, no pre-windup anti-windup, unbounded integral, inverted anti-windup limits, missing error reset, derivative kick, no deadband, wrong anti-windup correction</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="4" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>PID Control Algorithm - BUGGY</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

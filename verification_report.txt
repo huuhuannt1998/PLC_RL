@@ -1,0 +1,215 @@
+======================================================================
+FORMAL VERIFICATION REPORT
+Generated: 2025-11-19 18:01:25
+======================================================================
+
+BUGGY MODELS - Expected to have violations
+----------------------------------------------------------------------
+
+Alarm_Handler_buggy.smv: ✗ MISSED
+
+Batch_Process_buggy.smv: ✗ MISSED
+
+Conveyor_Belt_buggy.smv: ✗ MISSED
+
+Counter_Logic_buggy.smv: ✗ MISSED
+
+Door_Interlock_buggy.smv: ✗ MISSED
+
+Emergency_Stop_buggy.smv: ✗ MISSED
+
+Example_16_buggy.smv: ✗ MISSED
+
+Example_17_buggy.smv: ✗ MISSED
+
+Example_18_buggy.smv: ✗ MISSED
+
+Example_19_buggy.smv: ✗ MISSED
+
+Example_20_buggy.smv: ✗ MISSED
+
+Example_21_buggy.smv: ✗ MISSED
+
+Example_22_buggy.smv: ✗ MISSED
+
+Example_23_buggy.smv: ✗ MISSED
+
+Example_24_buggy.smv: ✗ MISSED
+
+Example_25_buggy.smv: ✗ MISSED
+
+Example_26_buggy.smv: ✗ MISSED
+
+Example_27_buggy.smv: ✗ MISSED
+
+Example_28_buggy.smv: ✗ MISSED
+
+Example_29_buggy.smv: ✗ MISSED
+
+Example_30_buggy.smv: ✗ MISSED
+
+Example_31_buggy.smv: ✗ MISSED
+
+Example_32_buggy.smv: ✗ MISSED
+
+Example_33_buggy.smv: ✗ MISSED
+
+Example_34_buggy.smv: ✗ MISSED
+
+Example_35_buggy.smv: ✗ MISSED
+
+Example_36_buggy.smv: ✗ MISSED
+
+Example_37_buggy.smv: ✗ MISSED
+
+Example_38_buggy.smv: ✗ MISSED
+
+Example_39_buggy.smv: ✗ MISSED
+
+Example_40_buggy.smv: ✗ MISSED
+
+Example_41_buggy.smv: ✗ MISSED
+
+Example_42_buggy.smv: ✗ MISSED
+
+Example_43_buggy.smv: ✗ MISSED
+
+Example_44_buggy.smv: ✗ MISSED
+
+Example_45_buggy.smv: ✗ MISSED
+
+Example_46_buggy.smv: ✗ MISSED
+
+Example_47_buggy.smv: ✗ MISSED
+
+Example_48_buggy.smv: ✗ MISSED
+
+Example_49_buggy.smv: ✗ MISSED
+
+Example_50_buggy.smv: ✗ MISSED
+
+Level_Control_buggy.smv: ✗ MISSED
+
+Light_Barrier_buggy.smv: ✗ MISSED
+
+PID_Temperature_buggy.smv: ✗ MISSED
+
+Pressure_Safety_buggy.smv: ✗ MISSED
+
+Pump_Sequencing_buggy.smv: ✗ MISSED
+
+Simple_Start_Stop_buggy.smv: ✓ DETECTED
+  Violations: 1
+  - -- specification  G (Stop ->  F !Motor)  is false
+
+Temperature_Control_buggy.smv: ✗ MISSED
+
+Timer_Check_buggy.smv: ✗ MISSED
+
+Traffic_Light_buggy.smv: ✗ MISSED
+
+
+CORRECT MODELS - Expected to pass all properties
+----------------------------------------------------------------------
+
+Alarm_Handler.smv: ✓ VERIFIED
+
+Batch_Process.smv: ✓ VERIFIED
+
+Conveyor_Belt.smv: ✓ VERIFIED
+
+Counter_Logic.smv: ✓ VERIFIED
+
+Door_Interlock.smv: ✗ FALSE POSITIVE
+  Unexpected violations: 1
+
+Emergency_Stop.smv: ✓ VERIFIED
+
+Example_16.smv: ✓ VERIFIED
+
+Example_17.smv: ✓ VERIFIED
+
+Example_18.smv: ✓ VERIFIED
+
+Example_19.smv: ✓ VERIFIED
+
+Example_20.smv: ✓ VERIFIED
+
+Example_21.smv: ✓ VERIFIED
+
+Example_22.smv: ✓ VERIFIED
+
+Example_23.smv: ✓ VERIFIED
+
+Example_24.smv: ✓ VERIFIED
+
+Example_25.smv: ✓ VERIFIED
+
+Example_26.smv: ✓ VERIFIED
+
+Example_27.smv: ✓ VERIFIED
+
+Example_28.smv: ✓ VERIFIED
+
+Example_29.smv: ✓ VERIFIED
+
+Example_30.smv: ✓ VERIFIED
+
+Example_31.smv: ✓ VERIFIED
+
+Example_32.smv: ✓ VERIFIED
+
+Example_33.smv: ✓ VERIFIED
+
+Example_34.smv: ✓ VERIFIED
+
+Example_35.smv: ✓ VERIFIED
+
+Example_36.smv: ✓ VERIFIED
+
+Example_37.smv: ✓ VERIFIED
+
+Example_38.smv: ✓ VERIFIED
+
+Example_39.smv: ✓ VERIFIED
+
+Example_40.smv: ✓ VERIFIED
+
+Example_41.smv: ✓ VERIFIED
+
+Example_42.smv: ✓ VERIFIED
+
+Example_43.smv: ✓ VERIFIED
+
+Example_44.smv: ✓ VERIFIED
+
+Example_45.smv: ✓ VERIFIED
+
+Example_46.smv: ✓ VERIFIED
+
+Example_47.smv: ✓ VERIFIED
+
+Example_48.smv: ✓ VERIFIED
+
+Example_49.smv: ✓ VERIFIED
+
+Example_50.smv: ✓ VERIFIED
+
+Level_Control.smv: ✓ VERIFIED
+
+Light_Barrier.smv: ✓ VERIFIED
+
+PID_Temperature.smv: ✓ VERIFIED
+
+Pressure_Safety.smv: ✓ VERIFIED
+
+Pump_Sequencing.smv: ✓ VERIFIED
+
+Simple_Start_Stop.smv: ✗ FALSE POSITIVE
+  Unexpected violations: 1
+
+Temperature_Control.smv: ✓ VERIFIED
+
+Timer_Check.smv: ✓ VERIFIED
+
+Traffic_Light.smv: ✓ VERIFIED

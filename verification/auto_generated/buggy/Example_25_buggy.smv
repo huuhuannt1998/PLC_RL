@@ -1,0 +1,17 @@
+MODULE main
+
+VAR
+  Input25 : boolean;
+  Output25 : boolean;
+
+ASSIGN
+  init(Input25) := FALSE;
+  init(Output25) := FALSE;
+
+  next(Output25) := case
+    Input25 : TRUE;
+    TRUE : Output25;
+  esac;
+
+
+-- Safety Properties

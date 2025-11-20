@@ -1,0 +1,36 @@
+# Large model files (download separately)
+models/*.pth
+
+# NuSMV binaries (users should download from official site)
+NuSMV-2.7.1-win64/
+
+# Training data and results (too large for GitHub)
+training_data/
+verification/pipeline_results/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

@@ -1,0 +1,55 @@
+MODULE main
+
+VAR
+  D_Term : boolean;
+  Error : boolean;
+  I_Term : boolean;
+  Kd : boolean;
+  Ki : boolean;
+  Kp : boolean;
+  LastError : boolean;
+  Output : boolean;
+  P_Term : boolean;
+  ProcessValue : boolean;
+  Setpoint : boolean;
+
+ASSIGN
+  init(D_Term) := FALSE;
+  init(Error) := FALSE;
+  init(I_Term) := FALSE;
+  init(Kd) := FALSE;
+  init(Ki) := FALSE;
+  init(Kp) := FALSE;
+  init(LastError) := FALSE;
+  init(Output) := FALSE;
+  init(P_Term) := FALSE;
+  init(ProcessValue) := FALSE;
+  init(Setpoint) := FALSE;
+
+  next(Error) := case
+    TRUE : ProcessValue - Setpoint;
+    TRUE : Error;
+  esac;
+
+  next(P_Term) := case
+    TRUE : Kp * Error;
+    TRUE : P_Term;
+  esac;
+
+  next(I_Term) := case
+    TRUE : I_Term + Ki * Error;
+    TRUE : I_Term;
+  esac;
+
+  next(D_Term) := case
+    TRUE : Kd * (Error - LastError);
+    TRUE : D_Term;
+  esac;
+
+  next(Output) := case
+    TRUE : P_Term + I_Term + D_Term;
+    TRUE : Output;
+  esac;
+
+
+-- Safety Properties

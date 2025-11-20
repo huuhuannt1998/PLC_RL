@@ -1,0 +1,26 @@
+MODULE main
+
+VAR
+  Alarm : boolean;
+  HighPressure : boolean;
+  HighTemp : boolean;
+  Shutdown : boolean;
+
+ASSIGN
+  init(Alarm) := FALSE;
+  init(HighPressure) := FALSE;
+  init(HighTemp) := FALSE;
+  init(Shutdown) := FALSE;
+
+  next(Alarm) := case
+    HighPressure | HighTemp : TRUE;
+    TRUE : Alarm;
+  esac;
+
+  next(Shutdown) := case
+    HighPressure | HighTemp : TRUE;
+    TRUE : Shutdown;
+  esac;
+
+
+-- Safety Properties

@@ -1,0 +1,28 @@
+MODULE main
+
+VAR
+  AckButton : boolean;
+  Alarm : boolean;
+  HighPressure : boolean;
+  HighTemp : boolean;
+  Shutdown : boolean;
+
+ASSIGN
+  init(AckButton) := FALSE;
+  init(Alarm) := FALSE;
+  init(HighPressure) := FALSE;
+  init(HighTemp) := FALSE;
+  init(Shutdown) := FALSE;
+
+  next(Alarm) := case
+    AckButton & !HighPressure & !HighTemp : FALSE;
+    TRUE : Alarm;
+  esac;
+
+  next(Shutdown) := case
+    AckButton & !HighPressure & !HighTemp : FALSE;
+    TRUE : Shutdown;
+  esac;
+
+
+-- Safety Properties

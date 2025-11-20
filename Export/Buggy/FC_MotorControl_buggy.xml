@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2025-11-19T10:30:00.000Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor>Engineering Team</HeaderAuthor>
+      <HeaderFamily>Motors</HeaderFamily>
+      <HeaderName>Motor Control Function</HeaderName>
+      <HeaderVersion>1.0</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Start" Datatype="Bool" />
+    <Member Name="Stop" Datatype="Bool" />
+    <Member Name="Speed_Setpoint" Datatype="Real" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="Motor_On" Datatype="Bool" />
+    <Member Name="Current_Speed" Datatype="Real" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Temp">
+    <Member Name="temp_speed" Datatype="Real" />
+  </Section>
+  <Section Name="Return">
+    <Member Name="Ret_Val" Datatype="Void" />
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>true</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>FC_MotorControl</Name>
+      <Number>10</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <SW.Blocks.CompileUnit ID="1" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3"><![CDATA[// Motor Control Logic - BUGGY VERSION WITH MULTIPLE CRITICAL ERRORS
+
+// BUG 1: Logic inversion - Stop button turns motor ON instead of OFF
+IF #Start THEN
+    #Motor_On := TRUE;
+END_IF;
+
+IF #Stop THEN
+    #Motor_On := TRUE;  // CRITICAL BUG: Should be FALSE
+END_IF;
+
+// BUG 2: Race condition - Start and Stop can both be TRUE simultaneously
+// Missing mutual exclusion check: IF #Start AND #Stop THEN handle conflict
+
+// BUG 3: No emergency stop override
+// Missing: IF #Emergency_Stop THEN #Motor_On := FALSE; RETURN; END_IF;
+
+// BUG 4: Missing upper speed limit check - can exceed safe maximum (4000 RPM)
+IF #Motor_On THEN
+    #temp_speed := #Speed_Setpoint;
+    
+    // BUG 5: No validation that Speed_Setpoint is within safe range (0-4000 RPM)
+    // Missing: IF #temp_speed > 4000.0 OR #temp_speed < 0.0 THEN #temp_speed := 0.0; END_IF;
+    
+    // Ramp up speed
+    IF #Current_Speed < #temp_speed THEN
+        #Current_Speed := #Current_Speed + 10.0;
+        
+        // BUG 6: No maximum speed safety limit enforced!
+        IF #Current_Speed > #temp_speed THEN
+            #Current_Speed := #temp_speed;
+        END_IF;
+        // Missing absolute safety limit: IF #Current_Speed > 4000.0 THEN #Current_Speed := 4000.0; END_IF;
+    END_IF;
+    
+    // BUG 7: No overspeed protection - if speed exceeds limit, should trigger emergency stop
+    
+ELSE
+    // BUG 8: Missing ramp down - immediate stop from high speed is mechanically dangerous!
+    #Current_Speed := 0.0;  // Should ramp down: IF #Current_Speed > 10.0 THEN #Current_Speed := #Current_Speed - 20.0;
+END_IF;
+
+// BUG 9: No state validation - Current_Speed can be negative after arithmetic errors
+// Missing: IF #Current_Speed < 0.0 THEN #Current_Speed := 0.0; END_IF;]]></StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>BUGS: Stop acts as Start, race condition, no emergency stop, missing speed limits, immediate stop without ramp-down, no state validation</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="4" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Motor Control - BUGGY</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

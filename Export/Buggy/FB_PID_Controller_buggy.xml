@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2025-11-19T10:30:00.000Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor>Control Systems</HeaderAuthor>
+      <HeaderFamily>Controllers</HeaderFamily>
+      <HeaderName>PID Controller</HeaderName>
+      <HeaderVersion>2.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Setpoint" Datatype="Real" />
+    <Member Name="ProcessValue" Datatype="Real" />
+    <Member Name="Kp" Datatype="Real" />
+    <Member Name="Ki" Datatype="Real" />
+    <Member Name="Kd" Datatype="Real" />
+    <Member Name="Enable" Datatype="Bool" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="ControlOutput" Datatype="Real" />
+    <Member Name="Error" Datatype="Real" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="IntegralSum" Datatype="Real" />
+    <Member Name="LastError" Datatype="Real" />
+    <Member Name="Initialized" Datatype="Bool" />
+  </Section>
+  <Section Name="Temp">
+    <Member Name="PropTerm" Datatype="Real" />
+    <Member Name="IntTerm" Datatype="Real" />
+    <Member Name="DiffTerm" Datatype="Real" />
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>true</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>FB_PID_Controller</Name>
+      <Number>20</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <SW.Blocks.CompileUnit ID="1" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3"><![CDATA[// PID Controller Implementation - BUGGY VERSION WITH MULTIPLE CRITICAL ERRORS
+IF #Enable THEN
+    // BUG 1: Calculate error with inverted sign!
+    #Error := #ProcessValue - #Setpoint;  // CRITICAL: Should be Setpoint - ProcessValue
+    
+    // BUG 2: No validation that inputs are within valid ranges
+    // Missing: IF #Kp < 0.0 OR #Ki < 0.0 OR #Kd < 0.0 THEN disable controller
+    
+    // Proportional term
+    #PropTerm := #Kp * #Error;
+    
+    // BUG 3: Integral term - No anti-windup BEFORE adding to integral sum!
+    #IntegralSum := #IntegralSum + #Error;  // Should check limits first
+    #IntTerm := #Ki * #IntegralSum;
+    
+    // BUG 4: IntegralSum can grow unbounded causing overflow
+    // Missing: IF #IntegralSum > 10000.0 THEN #IntegralSum := 10000.0; END_IF;
+    
+    // Derivative term
+    IF #Initialized THEN
+        #DiffTerm := #Kd * (#Error - #LastError);
+        // BUG 5: No derivative kick protection on setpoint change
+    ELSE
+        #DiffTerm := 0.0;
+        #Initialized := TRUE;
+    END_IF;
+    
+    // BUG 6: No validation of intermediate calculations - can be NaN or Inf
+    
+    // Calculate control output
+    #ControlOutput := #PropTerm + #IntTerm + #DiffTerm;
+    
+    // BUG 7: Anti-windup comparison operators are INVERTED!
+    IF #ControlOutput < 100.0 THEN  // CRITICAL BUG: Should be > 100.0
+        #ControlOutput := 100.0;
+        #IntegralSum := #IntegralSum - #Error;
+    ELSIF #ControlOutput > 0.0 THEN  // CRITICAL BUG: Should be < 0.0
+        #ControlOutput := 0.0;
+        #IntegralSum := #IntegralSum - #Error;
+    END_IF;
+    
+    // BUG 8: Anti-windup correction subtracts wrong amount
+    // Should subtract: (#ControlOutput - limit) / #Ki instead of just #Error
+    
+    // Save error for next cycle
+    #LastError := #Error;
+ELSE
+    // BUG 9: Not resetting Error output when disabled!
+    #ControlOutput := 0.0;
+    #IntegralSum := 0.0;
+    #LastError := 0.0;
+    #Initialized := FALSE;
+    // Missing: #Error := 0.0;
+    // Missing: Clear all temp variables (#PropTerm, #IntTerm, #DiffTerm)
+END_IF;
+
+// BUG 10: No deadband on error - controller oscillates for small errors
+// Missing: IF ABS(#Error) < 0.5 THEN #Error := 0.0; END_IF;]]></StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>BUGS: Inverted error sign, no input validation, no pre-windup anti-windup, unbounded integral, inverted anti-windup limits, missing error reset, derivative kick, no deadband, wrong anti-windup correction</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="4" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>PID Control Algorithm - BUGGY</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

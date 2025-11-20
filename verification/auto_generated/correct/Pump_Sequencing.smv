@@ -1,0 +1,29 @@
+MODULE main
+
+VAR
+  Demand : boolean;
+  Pump1 : boolean;
+  Pump2 : boolean;
+
+ASSIGN
+  init(Demand) := FALSE;
+  init(Pump1) := FALSE;
+  init(Pump2) := FALSE;
+
+  next(Pump1) := case
+    Demand > 25.0 : TRUE;
+    TRUE : FALSE;
+    TRUE : Pump1;
+  esac;
+
+  next(Pump2) := case
+    Demand > 25.0 : FALSE;
+    TRUE : FALSE;
+    TRUE : Pump2;
+  esac;
+
+
+-- Safety Properties
+LTLSPEC G !(Pump2 & Pump1)
+  -- Property: Pump2 and Pump1 should not be active simultaneously
+

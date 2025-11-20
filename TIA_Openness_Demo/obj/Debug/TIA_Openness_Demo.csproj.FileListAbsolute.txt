@@ -1,0 +1,13 @@
+C:\Users\hbui11\Desktop\PLC_RL\TIA_Openness_Demo\obj\Debug\TIA_Openness_Demo.csproj.AssemblyReference.cache
+C:\Users\hbui11\Desktop\PLC_RL\TIA_Openness_Demo\obj\Debug\TIA_Openness_Demo.csproj.CoreCompileInputs.cache
+C:\Users\hbui11\Desktop\PLC_RL\TIA_Openness_Demo\bin\Debug\TIA_Openness_Demo.exe
+C:\Users\hbui11\Desktop\PLC_RL\TIA_Openness_Demo\bin\Debug\TIA_Openness_Demo.pdb
+C:\Users\hbui11\Desktop\PLC_RL\TIA_Openness_Demo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hbui11\Desktop\PLC_RL\TIA_Openness_Demo\bin\Debug\Siemens.Engineering.dll
+C:\Users\hbui11\Desktop\PLC_RL\TIA_Openness_Demo\bin\Debug\Siemens.Engineering.Hmi.dll
+C:\Users\hbui11\Desktop\PLC_RL\TIA_Openness_Demo\bin\Debug\Siemens.Engineering.xml
+C:\Users\hbui11\Desktop\PLC_RL\TIA_Openness_Demo\bin\Debug\Siemens.Engineering.Hmi.xml
+C:\Users\hbui11\Desktop\PLC_RL\TIA_Openness_Demo\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hbui11\Desktop\PLC_RL\TIA_Openness_Demo\obj\Debug\TIA_Open.57FA1D56.Up2Date
+C:\Users\hbui11\Desktop\PLC_RL\TIA_Openness_Demo\obj\Debug\TIA_Openness_Demo.exe
+C:\Users\hbui11\Desktop\PLC_RL\TIA_Openness_Demo\obj\Debug\TIA_Openness_Demo.pdb

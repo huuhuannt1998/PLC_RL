@@ -1,0 +1,48 @@
+MODULE main
+
+VAR
+  5M : boolean;
+  DrainValve : boolean;
+  FillValve : boolean;
+  Level : boolean;
+  MixTime : boolean;
+  Mixer : boolean;
+  Phase : boolean;
+  TargetLevel : boolean;
+
+ASSIGN
+  init(5M) := FALSE;
+  init(DrainValve) := FALSE;
+  init(FillValve) := FALSE;
+  init(Level) := FALSE;
+  init(MixTime) := FALSE;
+  init(Mixer) := FALSE;
+  init(Phase) := FALSE;
+  init(TargetLevel) := FALSE;
+
+  next(FillValve) := case
+    TRUE : TRUE;
+    TRUE : FillValve;
+  esac;
+
+  next(Phase) := case
+    TRUE : 1; END_IF;
+    TRUE : 2; END_IF;
+    TRUE : Phase;
+  esac;
+
+  next(Mixer) := case
+    TRUE : TRUE;
+    TRUE : Mixer;
+  esac;
+
+  next(DrainValve) := case
+    TRUE : TRUE;
+    TRUE : DrainValve;
+  esac;
+
+
+-- Safety Properties
+LTLSPEC G !(DrainValve & FillValve)
+  -- Property: DrainValve and FillValve should not be active simultaneously
+

@@ -1,0 +1,507 @@
+{
+  "timestamp": "2025-11-19T18:01:25.971982",
+  "buggy": {
+    "Alarm_Handler_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Batch_Process_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Conveyor_Belt_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Counter_Logic_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Door_Interlock_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G (StartButton ->  F Machine)  is true\n"
+    },
+    "Emergency_Stop_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_16_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_17_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_18_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_19_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_20_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_21_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_22_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_23_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_24_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_25_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_26_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_27_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_28_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_29_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_30_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_31_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_32_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_33_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_34_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_35_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_36_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_37_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_38_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_39_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_40_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_41_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_42_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_43_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_44_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_45_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_46_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_47_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_48_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_49_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_50_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Level_Control_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Light_Barrier_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "PID_Temperature_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Pressure_Safety_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Pump_Sequencing_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Simple_Start_Stop_buggy.smv": {
+      "all_pass": false,
+      "violation_count": 1,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G (Stop ->  F !Motor)  is false\n-- as demonstrated by the following execution sequence\nTrace Description: LTL Counterexample \nTrace Type: Counterexample \n  -> State: 1.1 <-\n    Motor = FALSE\n    Start = FALSE\n    Stop = FALSE\n  -> State: 1.2 <-\n    Start = TRUE\n  -> State: 1.3 <-\n    Motor = TRUE\n    Start = FALSE\n    Stop = TRUE\n  -- Loop starts here\n  -> State: 1.4 <-\n    Stop = FALSE\n  -> State: 1.5 <-\n-- specification  G (Start ->  F Motor)  is true\n"
+    },
+    "Temperature_Control_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Timer_Check_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Traffic_Light_buggy.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    }
+  },
+  "correct": {
+    "Alarm_Handler.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Batch_Process.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Conveyor_Belt.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Counter_Logic.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Door_Interlock.smv": {
+      "all_pass": false,
+      "violation_count": 1,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G (StartButton ->  F Machine)  is false\n-- as demonstrated by the following execution sequence\nTrace Description: LTL Counterexample \nTrace Type: Counterexample \n  -> State: 1.1 <-\n    DoorClosed = FALSE\n    Machine = FALSE\n    StartButton = FALSE\n  -> State: 1.2 <-\n    StartButton = TRUE\n  -- Loop starts here\n  -> State: 1.3 <-\n    StartButton = FALSE\n  -> State: 1.4 <-\n"
+    },
+    "Emergency_Stop.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_16.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_17.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_18.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_19.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_20.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_21.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_22.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_23.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_24.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_25.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_26.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_27.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_28.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_29.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_30.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_31.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_32.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_33.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_34.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_35.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_36.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_37.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_38.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_39.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_40.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_41.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_42.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_43.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_44.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_45.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_46.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_47.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_48.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_49.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Example_50.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Level_Control.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Light_Barrier.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "PID_Temperature.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Pressure_Safety.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Pump_Sequencing.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Simple_Start_Stop.smv": {
+      "all_pass": false,
+      "violation_count": 1,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G (Stop ->  F !Motor)  is true\n-- specification  G (Start ->  F Motor)  is false\n-- as demonstrated by the following execution sequence\nTrace Description: LTL Counterexample \nTrace Type: Counterexample \n  -> State: 1.1 <-\n    Motor = FALSE\n    Start = FALSE\n    Stop = FALSE\n  -> State: 1.2 <-\n    Start = TRUE\n    Stop = TRUE\n  -- Loop starts here\n  -> State: 1.3 <-\n    Start = FALSE\n    Stop = FALSE\n  -> State: 1.4 <-\n"
+    },
+    "Temperature_Control.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Timer_Check.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    },
+    "Traffic_Light.smv": {
+      "all_pass": true,
+      "violation_count": 0,
+      "output": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n"
+    }
+  }
+}

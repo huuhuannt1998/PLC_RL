@@ -1,0 +1,17 @@
+MODULE main
+
+VAR
+  Counter : boolean;
+  Output : boolean;
+
+ASSIGN
+  init(Counter) := FALSE;
+  init(Output) := FALSE;
+
+  next(Output) := case
+    Counter >= 10 : TRUE;
+    TRUE : Output;
+  esac;
+
+
+-- Safety Properties

@@ -1,0 +1,19 @@
+MODULE main
+
+VAR
+  MaxPressure : boolean;
+  Pressure : boolean;
+  Warning : boolean;
+
+ASSIGN
+  init(MaxPressure) := FALSE;
+  init(Pressure) := FALSE;
+  init(Warning) := FALSE;
+
+  next(Warning) := case
+    Pressure > MaxPressure : TRUE;
+    TRUE : Warning;
+  esac;
+
+
+-- Safety Properties

@@ -1,0 +1,25 @@
+MODULE main
+
+VAR
+  Motor : boolean;
+  Start : boolean;
+  Stop : boolean;
+
+ASSIGN
+  init(Motor) := FALSE;
+  init(Start) := FALSE;
+  init(Stop) := FALSE;
+
+  next(Motor) := case
+    Stop : FALSE;
+    TRUE : Motor;
+  esac;
+
+
+-- Safety Properties
+LTLSPEC G (Stop -> F !Motor)
+  -- Property: If Stop is active, Motor should eventually stop
+
+LTLSPEC G (Start -> F Motor)
+  -- Property: If Start is pressed, Motor should eventually activate
+

@@ -1,0 +1,18 @@
+MODULE main
+
+VAR
+  LightBarrier : boolean;
+  ObjectDetected : boolean;
+
+ASSIGN
+  init(LightBarrier) := FALSE;
+  init(ObjectDetected) := FALSE;
+
+  next(ObjectDetected) := case
+    LightBarrier : FALSE;
+    TRUE : TRUE;
+    TRUE : ObjectDetected;
+  esac;
+
+
+-- Safety Properties

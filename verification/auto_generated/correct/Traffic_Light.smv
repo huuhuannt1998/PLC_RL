@@ -1,0 +1,38 @@
+MODULE main
+
+VAR
+  20S : boolean;
+  30S : boolean;
+  3S : boolean;
+  Green : boolean;
+  Red : boolean;
+  State : boolean;
+  Timer : boolean;
+  Yellow : boolean;
+
+ASSIGN
+  init(20S) := FALSE;
+  init(30S) := FALSE;
+  init(3S) := FALSE;
+  init(Green) := FALSE;
+  init(Red) := FALSE;
+  init(State) := FALSE;
+  init(Timer) := FALSE;
+  init(Yellow) := FALSE;
+
+  next(Red) := case
+    TRUE : TRUE; Yellow := FALSE; Green := FALSE;
+    TRUE : FALSE; Yellow := FALSE; Green := TRUE;
+    TRUE : FALSE; Yellow := TRUE; Green := FALSE;
+    TRUE : Red;
+  esac;
+
+  next(State) := case
+    TRUE : 1; END_IF;
+    TRUE : 2; END_IF;
+    TRUE : 0; END_IF;
+    TRUE : State;
+  esac;
+
+
+-- Safety Properties

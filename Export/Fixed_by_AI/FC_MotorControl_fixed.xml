@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Document xmlns:ns0="http://www.siemens.com/automation/Openness/SW/Interface/v5" xmlns:ns1="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2025-11-19T10:30:00.000Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor>Engineering Team</HeaderAuthor>
+      <HeaderFamily>Motors</HeaderFamily>
+      <HeaderName>Motor Control Function</HeaderName>
+      <HeaderVersion>1.0</HeaderVersion>
+      <Interface><ns0:Sections>
+  <ns0:Section Name="Input">
+    <ns0:Member Name="Start" Datatype="Bool" />
+    <ns0:Member Name="Stop" Datatype="Bool" />
+    <ns0:Member Name="Speed_Setpoint" Datatype="Real" />
+  </ns0:Section>
+  <ns0:Section Name="Output">
+    <ns0:Member Name="Motor_On" Datatype="Bool" />
+    <ns0:Member Name="Current_Speed" Datatype="Real" />
+  </ns0:Section>
+  <ns0:Section Name="InOut" />
+  <ns0:Section Name="Temp">
+    <ns0:Member Name="temp_speed" Datatype="Real" />
+  </ns0:Section>
+  <ns0:Section Name="Return">
+    <ns0:Member Name="Ret_Val" Datatype="Void" />
+  </ns0:Section>
+</ns0:Sections></Interface>
+      <IsIECCheckEnabled>true</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>FC_MotorControl</Name>
+      <Number>10</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <SW.Blocks.CompileUnit ID="1" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><ns1:StructuredText>0.0 THEN #Motor_On := FALSE;#Motor_On = FALSE;#Motor_On = FALSE; END_IF;#Motor_On = FALSE; END_IF;#Motor_On = FALSE; END_IF;#Motor_On = FALSE; END_IF;#Motor_On = FALSE; END_IF;#Motor_On = FALSE; END_</ns1:StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>BUGS: Stop acts as Start, race condition, no emergency stop, missing speed limits, immediate stop without ramp-down, no state validation</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="4" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Motor Control - BUGGY</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

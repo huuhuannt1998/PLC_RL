@@ -1,0 +1,30 @@
+MODULE main
+
+VAR
+  MaxPressure : boolean;
+  Pressure : boolean;
+  SafetyValve : boolean;
+  Warning : boolean;
+
+ASSIGN
+  init(MaxPressure) := FALSE;
+  init(Pressure) := FALSE;
+  init(SafetyValve) := FALSE;
+  init(Warning) := FALSE;
+
+  next(SafetyValve) := case
+    Pressure > MaxPressure : TRUE;
+    TRUE : FALSE;
+    TRUE : SafetyValve;
+  esac;
+
+  next(Warning) := case
+    Pressure > MaxPressure : TRUE;
+    TRUE : Warning;
+  esac;
+
+
+-- Safety Properties
+LTLSPEC G (SafetyValve -> F !SafetyValve)
+  -- Property: If SafetyValve is active, SafetyValve should eventually stop
+

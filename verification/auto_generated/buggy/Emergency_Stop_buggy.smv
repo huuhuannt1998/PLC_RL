@@ -1,0 +1,18 @@
+MODULE main
+
+VAR
+  EmergencyStop : boolean;
+  SystemRunning : boolean;
+
+ASSIGN
+  init(EmergencyStop) := FALSE;
+  init(SystemRunning) := FALSE;
+
+  next(SystemRunning) := case
+    EmergencyStop : TRUE;
+    TRUE : FALSE;
+    TRUE : SystemRunning;
+  esac;
+
+
+-- Safety Properties

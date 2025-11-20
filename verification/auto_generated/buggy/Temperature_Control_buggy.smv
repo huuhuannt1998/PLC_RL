@@ -1,0 +1,20 @@
+MODULE main
+
+VAR
+  Heater : boolean;
+  Setpoint : boolean;
+  Temperature : boolean;
+
+ASSIGN
+  init(Heater) := FALSE;
+  init(Setpoint) := FALSE;
+  init(Temperature) := FALSE;
+
+  next(Heater) := case
+    Temperature > Setpoint : TRUE;
+    TRUE : FALSE;
+    TRUE : Heater;
+  esac;
+
+
+-- Safety Properties

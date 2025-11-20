@@ -1,0 +1,19 @@
+MODULE main
+
+VAR
+  Conveyor : boolean;
+  Start : boolean;
+  Stop : boolean;
+
+ASSIGN
+  init(Conveyor) := FALSE;
+  init(Start) := FALSE;
+  init(Stop) := FALSE;
+
+  next(Conveyor) := case
+    TRUE : Start & !Stop;
+    TRUE : Conveyor;
+  esac;
+
+
+-- Safety Properties

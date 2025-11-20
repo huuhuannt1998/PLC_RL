@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2025-11-19T10:30:00.000Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor>Engineering Team</HeaderAuthor>
+      <HeaderFamily>Motors</HeaderFamily>
+      <HeaderName>Motor Control Function</HeaderName>
+      <HeaderVersion>1.0</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Start" Datatype="Bool" />
+    <Member Name="Stop" Datatype="Bool" />
+    <Member Name="Speed_Setpoint" Datatype="Real" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="Motor_On" Datatype="Bool" />
+    <Member Name="Current_Speed" Datatype="Real" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Temp">
+    <Member Name="temp_speed" Datatype="Real" />
+  </Section>
+  <Section Name="Return">
+    <Member Name="Ret_Val" Datatype="Void" />
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>true</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>FC_MotorControl</Name>
+      <Number>10</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <SW.Blocks.CompileUnit ID="1" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+// Motor Control Logic
+IF #Start AND NOT #Stop THEN
+    #Motor_On := TRUE;
+    #temp_speed := #Speed_Setpoint;
+    
+    // Ramp up speed
+    IF #Current_Speed &lt; #temp_speed THEN
+        #Current_Speed := #Current_Speed + 10.0;
+        IF #Current_Speed &gt; #temp_speed THEN
+            #Current_Speed := #temp_speed;
+        END_IF;
+    END_IF;
+ELSE
+    #Motor_On := FALSE;
+    // Ramp down speed
+    IF #Current_Speed &gt; 0.0 THEN
+        #Current_Speed := #Current_Speed - 10.0;
+        IF #Current_Speed &lt; 0.0 THEN
+            #Current_Speed := 0.0;
+        END_IF;
+    END_IF;
+END_IF;
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Main motor control with speed ramping</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="4" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Motor Control</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2025-11-19T10:30:00.000Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <DBAccessibleFromOPCUA>true</DBAccessibleFromOPCUA>
+      <DataBlockType>GlobalDB</DataBlockType>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="Start_Button" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Start button input</MultiLanguageText>
+      </Comment>
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Stop_Button" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop button input - BUG: Should have ExternalWritable=false for safety</MultiLanguageText>
+      </Comment>
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Emergency_Stop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Emergency stop input - BUG: Should be non-retentive (loses state on power cycle)</MultiLanguageText>
+      </Comment>
+      <AttributeList>
+        <BooleanAttribute Name="Retain" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Motor_Running" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Motor running status - BUG: Should be retentive to maintain state</MultiLanguageText>
+      </Comment>
+      <AttributeList>
+        <BooleanAttribute Name="Retain" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Motor_Speed" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Current motor speed RPM - BUG: Invalid negative start value</MultiLanguageText>
+      </Comment>
+      <StartValue>-100.0</StartValue>
+    </Member>
+    <Member Name="Speed_Setpoint" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Desired motor speed RPM - BUG: Exceeds maximum safe speed (4000 RPM)</MultiLanguageText>
+      </Comment>
+      <StartValue>5500.0</StartValue>
+    </Member>
+    <Member Name="Temperature" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Motor temperature in Celsius - BUG: Should be Int for sensor accuracy</MultiLanguageText>
+      </Comment>
+      <StartValue>25.0</StartValue>
+    </Member>
+    <Member Name="RunTime_Hours" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Total runtime hours - BUG: Should be UDInt (unsigned) to prevent negative values</MultiLanguageText>
+      </Comment>
+      <StartValue>-500</StartValue>
+    </Member>
+    <Member Name="Alarm_Active" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Alarm status flag - BUG: No mutual exclusion with Motor_Running</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Alarm_Code" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Alarm code identifier - BUG: Should be DWord for extended alarm codes</MultiLanguageText>
+      </Comment>
+      <StartValue>16#FFFF</StartValue>
+    </Member>
+    <Member Name="Max_Safe_Speed" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Maximum safe speed - BUG: Missing this critical safety parameter causes overspeed!</MultiLanguageText>
+      </Comment>
+      <StartValue>0.0</StartValue>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DB_GlobalData</Name>
+      <Number>1</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+  </SW.Blocks.GlobalDB>
+</Document>

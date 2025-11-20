@@ -1,0 +1,22 @@
+MODULE main
+
+VAR
+  DoorClosed : boolean;
+  Machine : boolean;
+  StartButton : boolean;
+
+ASSIGN
+  init(DoorClosed) := FALSE;
+  init(Machine) := FALSE;
+  init(StartButton) := FALSE;
+
+  next(Machine) := case
+    !DoorClosed : FALSE;
+    TRUE : Machine;
+  esac;
+
+
+-- Safety Properties
+LTLSPEC G (StartButton -> F Machine)
+  -- Property: If StartButton is pressed, Machine should eventually activate
+

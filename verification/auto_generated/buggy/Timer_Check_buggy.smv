@@ -1,0 +1,26 @@
+MODULE main
+
+VAR
+  50MS : boolean;
+  Output : boolean;
+  Start : boolean;
+  Timer : boolean;
+
+ASSIGN
+  init(50MS) := FALSE;
+  init(Output) := FALSE;
+  init(Start) := FALSE;
+  init(Timer) := FALSE;
+
+  next(IN) := case
+    TRUE : Start, PT := T50MS);
+    TRUE : IN;
+  esac;
+
+  next(Output) := case
+    TRUE : Timer.Q;
+    TRUE : Output;
+  esac;
+
+
+-- Safety Properties
