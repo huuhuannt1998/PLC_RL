@@ -4,18 +4,17 @@
 
 > 🏆 **First Known System** combining AI-powered PLC error detection, automatic fixing, and formal verification in a unified pipeline
 
-> 📊 **Proven Results**: 96.5% test accuracy, 82% automatic fix rate, $845K/year cost savings, validated on 35 industrial PLCs
+> 📊 **Proof of Concept**: Demonstrates end-to-end pipeline from detection to verified fixes
 
 ## Features
 
-- **Supervised Learning Detection**: Fine-tuned CodeBERT transformer model (96.5% test accuracy)
-- **Automatic Code Fixing**: CodeT5 model generating fixes with 82% success rate
+- **Supervised Learning Detection**: Fine-tuned CodeBERT transformer model for PLC error detection
+- **Automatic Code Fixing**: CodeT5 model for generating code fixes
 - **Integrated Formal Verification**: NuSMV model checking for mathematical correctness proofs
 - **Novel Integration**: First system combining AI + formal methods for PLC verification
-- **Industrial Validation**: Tested on 35 real-world manufacturing plant PLCs (94.3% accuracy)
 - **XML Parser**: Parse TIA Portal V17 XML exports (Ladder Logic, SCL, Data Blocks)
-- **GPU Acceleration**: CUDA support for fast training and inference (RTX A4000)
-- **Complete Pipeline**: Detect → Fix → Verify workflow with quantified performance metrics
+- **GPU/CPU Support**: CUDA acceleration when available, CPU fallback
+- **Complete Pipeline**: Detect → Fix → Verify workflow with before/after comparison
 
 ## System Architecture
 
@@ -67,19 +66,19 @@ pip install transformers tokenizers datasets
 ### 1. Train CodeBERT on Your Dataset
 
 ```bash
-python generate_training_data.py  # Generate 95 training examples
+python generate_training_data.py  # Generate 50 training examples
 python main.py                     # Train + Verify complete pipeline
 ```
 
 Output:
-- `models/codebert_trained_95examples.pth` - Trained model (98.9% accuracy)
-- `verification/pipeline_results/final_report.json` - Complete results
-- `Export/Fixed_by_AI/*.xml` - 47 AI-corrected PLC files
+- `models/codebert_trained_50examples.pth` - Trained model
+- `verification/pipeline_results/final_report.json` - Verification results
+- `Export/Fixed_by_AI/*.xml` - AI-generated fixes
 
 ### 2. Run Complete Pipeline
 
 The pipeline performs:
-1. **AI Detection**: CodeBERT identifies errors (99%+ confidence)
+1. **AI Detection**: CodeBERT identifies errors in PLC XML files
 2. **Pre-Fix Verification**: Convert to NuSMV and check safety properties
 3. **AI Fixing**: CodeT5 generates corrected code
 4. **Post-Fix Verification**: Re-run NuSMV to validate fixes
@@ -105,7 +104,7 @@ PLC_RL/
 ├── requirements.txt               # Python dependencies
 ├── README.md                      # This file
 ├── models/
-│   └── codebert_trained_50examples.pth  # Trained CodeBERT (100% accuracy)
+│   └── codebert_trained_50examples.pth  # Trained CodeBERT model
 ├── src/ppo_gnn_solution/          # Historical folder name (originally explored RL, now supervised learning)
 │   ├── codebert_model.py         # CodeBERT supervised learning detector (fine-tuned transformer)
 │   ├── ai_fixer.py               # CodeT5 supervised learning fixer (seq2seq transformer)
@@ -229,7 +228,7 @@ code = parser.extract_code_from_xml('Export/Buggy/FC_MotorControl_buggy.xml')
 has_error, confidence = detector.detect_error(code)
 
 print(f"Error detected: {has_error} (confidence: {confidence:.2%})")
-# Output: Error detected: True (confidence: 99.99%)
+# Output: Error detected: True (confidence: high)
 ```
 
 ### Generate AI Fix with CodeT5
@@ -278,35 +277,25 @@ else:
     print(output)
 ```
 
-## Training Results
+## Implementation Details
 
-### CodeBERT Training (50 Epochs on GPU)
-- **Dataset**: 285 examples (143 buggy + 142 correct) with 10 error types
-- **Training Time**: ~5 minutes on RTX A4000
-- **Training/Validation Split**: 80/20 with 5-fold cross-validation
-- **Final Loss**: 0.0124
-- **Training Accuracy**: 98.9%
-- **Validation Accuracy**: 97.2%
-- **Test Set Accuracy**: 96.5% (on 57 unseen examples)
-- **F1 Score**: 0.968
-- **Precision**: 97.8% | **Recall**: 95.9%
-- **False Positive Rate**: 2.1%
-- **Device**: CUDA (GPU accelerated)
+### CodeBERT Training
+- **Dataset**: 95 labeled PLC examples (48 buggy + 47 correct)
+- **Error Categories**: 10 types (missing safety, wrong conditions, logic errors, etc.)
+- **Training**: 50 epochs, batch size 8, AdamW optimizer
+- **Model Output**: `models/codebert_trained_50examples.pth`
+- **Note**: Proof-of-concept training - no validation split or performance metrics collected
 
-### CodeT5 Fixing Results (Fine-tuned on PLC Patterns)
-- **Successful Fixes**: 41/50 files (82%)
-- **Partial Fixes**: 6/50 files (12%) - reduced violations by 50%+
-- **Failed Fixes**: 3/50 files (6%)
-- **Average Fix Time**: 2.3 seconds per file
-- **Code Quality Score**: 8.7/10 (automated metrics)
+### CodeT5 Fixing Pipeline
+- Uses pre-trained `Salesforce/codet5-base` transformer
+- Generates corrected code based on detected error types
+- Saves fixed XML to `Export/Fixed_by_AI/`
 
-### NuSMV Verification Results
-- **Buggy Models**: 386 total safety property violations detected across 50 files
-- **Average Violations per Buggy File**: 7.7 violations
-- **Correct Models**: 100% pass all safety properties (142 files)
-- **Detection Rate**: 98.4% of intentional bugs caught (379/386)
-- **False Negatives**: 7 subtle race conditions (1.6%)
-- **Verification Time**: Average 3.2s per model, 2.8min for entire suite
+### NuSMV Formal Verification
+- Converts PLC XML to formal SMV models
+- Verifies 5 safety properties (motor safety, E-stop, speed limits, etc.)
+- Compares before/after verification results
+- Documents violations and passes in final report
 
 ## Formal Verification Properties
 
@@ -327,31 +316,26 @@ The system checks these safety properties:
 5. **Start/Stop Conflict**: `G((Start AND Stop) -> X Motor_On = Motor_On)`
    - "If both pressed, state unchanged"
 
-## Performance Metrics
+## Demonstrated Capabilities
 
-| Metric | Training Set | Validation Set | Test Set | Industrial Validation |
-|--------|--------------|----------------|----------|-----------------------|
-| **Detection Accuracy** | 98.9% | 97.2% | 96.5% | 94.3% (real PLCs) |
-| **Fixing Success Rate** | 82% | 79% | 77% | 73% (production code) |
-| **F1 Score** | 0.989 | 0.972 | 0.968 | 0.941 |
-| **Precision** | 98.7% | 97.8% | 97.1% | 95.8% |
-| **Recall** | 99.1% | 96.7% | 95.9% | 92.9% |
-| **False Positive Rate** | 1.3% | 2.2% | 2.9% | 4.2% |
-| **Training Time** | 5 min (285 examples) | - | - | - |
-| **Inference Speed** | 0.15s/file | 0.16s/file | 0.17s/file | 0.21s/file |
-| **Fix Generation Time** | 2.1s/file | 2.3s/file | 2.5s/file | 3.2s/file |
-| **NuSMV Verification** | 3.2s/model | 3.4s/model | 3.6s/model | 4.8s/model |
-| **Safety Violations Found** | 386/392 (98.5%) | 78/81 (96.3%) | 61/64 (95.3%) | 127/136 (93.4%) |
-| **End-to-End Pipeline** | 6.8s/file | 7.1s/file | 7.4s/file | 9.3s/file |
+### Training
+- Successfully trains CodeBERT on 95 labeled PLC examples (48 buggy + 47 correct)
+- Fine-tunes transformer model to recognize 10 error categories
+- Saves trained model for inference: `models/codebert_trained_50examples.pth`
+- Supports both CUDA (GPU) and CPU training
 
-### Industrial Validation Results
+### Detection & Fixing
+- Detects errors in buggy PLC XML files using fine-tuned CodeBERT
+- Generates fixes using CodeT5 transformer model
+- Saves fixed XML files with corrected logic to `Export/Fixed_by_AI/`
+- Processes multiple PLC file types (SCL, LAD, FBD, DB)
 
-**Test Set**: 35 real-world PLC programs from manufacturing plants (anonymized)
-- **Motor Control Systems**: 12 files, 94.2% detection accuracy, 75% fix rate
-- **Safety Interlocks**: 8 files, 96.7% detection accuracy, 87% fix rate  
-- **PID Controllers**: 7 files, 91.3% detection accuracy, 68% fix rate
-- **Sequential Control**: 5 files, 97.8% detection accuracy, 82% fix rate
-- **Alarm Handlers**: 3 files, 88.9% detection accuracy, 70% fix rate
+### Verification
+- Converts XML to NuSMV formal models automatically
+- Verifies safety properties (motor safety, emergency stop, speed limits, etc.)
+- Compares before/after verification results
+- Documents violations and passes in final JSON report
+- Provides formal mathematical proofs of correctness
 
 
 ## System Requirements
@@ -390,44 +374,32 @@ Device: NVIDIA RTX A4000
    └─▶ training_data/correct/*.xml (47 files)
 
 2. Train CodeBERT (50 epochs, GPU)
-   └─▶ models/codebert_trained_50examples.pth (100% accuracy)
+   └─▶ models/codebert_trained_50examples.pth
 
-3. Process Buggy Files (50 files analyzed)
+3. Process Buggy Files
    ├─▶ Export/Buggy/FC_MotorControl_buggy.xml
-   │   ├─ AI Detection: Error detected (98.7% confidence) [0.12s]
+   │   ├─ AI Detection: Error detected
    │   ├─ Error Types: Logic inversion, Missing safety interlock
-   │   ├─ Convert to NuSMV (BEFORE) [0.8s]
-   │   ├─ Verify: [FAIL] 9 violations found [2.1s]
+   │   ├─ Convert to NuSMV (BEFORE)
+   │   ├─ Verify: [FAIL] violations found
    │   │   • G(Stop -> F !Motor) VIOLATED
    │   │   • G(Emergency_Stop -> !Motor) VIOLATED  
-   │   │   • 7 additional safety violations
-   │   ├─ Generate AI Fix with CodeT5 [2.3s]
+   │   │   • Additional safety violations detected
+   │   ├─ Generate AI Fix with CodeT5
    │   ├─ Save: Export/Fixed_by_AI/FC_MotorControl_fixed.xml
-   │   ├─ Convert to NuSMV (AFTER) [0.7s]
-   │   └─ Verify: [PASS] 0 violations, all properties satisfied [1.9s]
-   │       ✓ Fix Success Rate: 100% (9/9 violations resolved)
-   │       ✓ Total Time: 7.98s (vs 75min manual review)
+   │   ├─ Convert to NuSMV (AFTER)
+   │   └─ Verify: [PASS] violations resolved, all properties satisfied
    │
    ├─▶ Export/Buggy/FB_PID_Controller_buggy.xml  
-   │   ├─ AI Detection: Error detected (97.2% confidence) [0.14s]
+   │   ├─ AI Detection: Error detected
    │   ├─ Error Types: Sign error, Missing logic, Invalid default
-   │   ├─ Convert to NuSMV (BEFORE) [1.1s]
-   │   ├─ Verify: [FAIL] 10 violations found [2.8s]
-   │   ├─ Generate AI Fix with CodeT5 [2.5s]
+   │   ├─ Convert to NuSMV (BEFORE)
+   │   ├─ Verify: [FAIL] multiple violations found
+   │   ├─ Generate AI Fix with CodeT5
    │   ├─ Save: Export/Fixed_by_AI/FB_PID_Controller_fixed.xml
-   │   ├─ Convert to NuSMV (AFTER) [1.0s]
-   │   └─ Verify: [IMPROVED] 3 violations remaining [2.6s]
-   │       ⚠ Partial Fix: 70% resolved (7/10 violations fixed)
-   │       ⚠ Remaining issues: Complex PID windup logic
-   │       ✓ Total Time: 10.14s
-   │
-   └─▶ Overall Statistics (50 files processed)
-       ├─ Total Bugs Detected: 386/392 (98.5%)
-       ├─ Fully Fixed: 41 files (82%)
-       ├─ Partially Fixed: 6 files (12%, avg 65% improvement)
-       ├─ Failed to Fix: 3 files (6%)
-       ├─ False Positives: 5 files (1.3%)
-       └─ Total Processing Time: 6min 20s (avg 7.6s/file)
+   │   ├─ Convert to NuSMV (AFTER)
+   │   └─ Verify: [IMPROVED] some violations resolved
+   │       ⚠ Note: Complex control logic may require multiple iterations
 
 
 4. Generate Report
@@ -454,8 +426,8 @@ Device: NVIDIA RTX A4000
 
 - **Darvas et al. (2020)**: "Verification of Safety PLC Programs"
   - ✅ Safety property checking
-  - ❌ Rule-based only, 60-70% coverage
-  - **Difference**: Our AI achieves 96.5% with learning
+  - ❌ Rule-based only, limited coverage
+  - **Difference**: We use learned models from labeled data
 
 #### 2. **ML for Industrial Control** (Academic)
 - **Smith et al. (2021)**: "Anomaly Detection in SCADA using LSTM"
@@ -470,7 +442,7 @@ Device: NVIDIA RTX A4000
 
 #### 3. **Static Analysis Tools** (Industry)
 - **Siemens PLCSIM Advanced**: Simulation only, no bug detection
-- **Rockwell Studio 5000 Logix Designer**: Rule-based analysis, 50-60% accuracy
+- **Rockwell Studio 5000 Logix Designer**: Rule-based analysis with limited coverage
 - **CODESYS**: Syntax checking, no semantic analysis
 - **PLCopen XML Checker**: Format validation only
   - **Difference**: All are rule-based, we use learned representations
@@ -489,46 +461,28 @@ Device: NVIDIA RTX A4000
 
 **No Existing System Provides**:
 1. ✅ AI-based detection trained on PLC code
-2. ✅ Automatic fixing with success metrics (82%)
+2. ✅ Automatic fixing using transformer models
 3. ✅ Integrated formal verification (NuSMV)
-4. ✅ Industrial validation (35 real PLCs)
-5. ✅ Open-source implementation + dataset
+4. ✅ End-to-end pipeline: detect → fix → verify
+5. ✅ Open-source implementation + labeled dataset
 
-**This Project Fills the Gap**: First end-to-end system combining all five elements
-
-### Benchmark Comparison
-
-**PLCBench-2025** (Hypothetical Standardized Dataset):
-
-| System | Detection Accuracy | Fix Rate | Formal Proof | Speed | Open Source |
-|--------|-------------------|----------|--------------|-------|-------------|
-| **This Work** | **96.5%** | **82%** | ✅ Yes | **7.4s** | ✅ MIT |
-| CodeBERT (baseline) | 89.2% | 0% | ❌ No | 0.15s | ✅ Yes |
-| GPT-4 (zero-shot) | 78.4% | 51% | ❌ No | 45s | ❌ API only |
-| Static Analysis (CODESYS) | 71.3% | 0% | ❌ No | 12s | ❌ Commercial |
-| Rule-Based (PLCopen) | 43.7% | 0% | ❌ No | 2s | ✅ Yes |
-| Manual Review | 75-85% | 100% | ❌ No | 75min | - |
-
-
+**This Project Fills the Gap**: First proof-of-concept system combining all five elements
 ## Comparative Analysis
 
 ### vs. Manual Code Review
-| Aspect | Manual Review | AI + Verification System | Improvement |
-|--------|---------------|--------------------------|-------------|
-| **Time per File** | 60-90 min | 6-10 seconds | **99.8% faster** |
-| **Detection Rate** | 75-85% (human error) | 94-97% | **+15% accuracy** |
-| **Cost per File** | $357 (senior engineer) | $0.02 (compute) | **99.99% cheaper** |
-| **Consistency** | Varies by reviewer | Uniform | **100% consistent** |
-| **Scalability** | Limited (1-2 files/day) | Unlimited (1000s/day) | **500x+ scalable** |
-| **Formal Proof** | No | Yes (NuSMV) | **Mathematical guarantee** |
+- **Speed**: Automated system processes files in seconds vs. hours of manual review
+- **Consistency**: Uniform analysis across all files vs. human variability
+- **Scalability**: Can process many files in parallel vs. limited human capacity
+- **Formal Proof**: Provides mathematical verification guarantees
+- **Cost**: Minimal compute cost vs. senior engineer time
 
 ### vs. Static Analysis Tools (e.g., LAUTERBACH, PLCopen)
 | Feature | Traditional Static Analysis | This System | Advantage |
 |---------|----------------------------|-------------|------------|
-| **Deep Learning** | ❌ Rule-based only | ✅ CodeBERT + patterns | Learns complex bugs |
-| **Auto-Fix** | ❌ Detection only | ✅ CodeT5 generates fixes | 73-82% fix rate |
+| **Deep Learning** | ❌ Rule-based only | ✅ CodeBERT + patterns | Learns from examples |
+| **Auto-Fix** | ❌ Detection only | ✅ CodeT5 generates fixes | Automated correction |
 | **Formal Verification** | ❌ Not integrated | ✅ NuSMV built-in | Mathematical proof |
-| **Context Understanding** | ⚠️ Limited | ✅ Transformer-based | Better accuracy |
+| **Context Understanding** | ⚠️ Limited | ✅ Transformer-based | Contextual analysis |
 | **New Error Types** | ❌ Manual rules | ✅ Retrain on new data | Adaptive learning |
 
 
@@ -537,7 +491,7 @@ Device: NVIDIA RTX A4000
 
 1. **LAD/FBD Support**: Ladder Logic and Function Block Diagrams only partially supported (code extraction limited)
 2. **Data Block Processing**: DB files have no executable code, skipped in pipeline
-3. **CodeT5 Accuracy**: May not fix 100% of complex bugs (70-85% expected)
+3. **CodeT5 Limitations**: May not fix all complex bugs (requires iterative improvement)
 4. **XML Format**: Requires TIA Portal V17 XML export format with CDATA sections
 5. **GPU Memory**: Large models may require 8GB+ VRAM
 
@@ -628,11 +582,9 @@ For questions, issues, or collaboration:
 
 ---
 
-**Status**: ✅ Production-ready system with 96.5% test accuracy, 94.3% industrial validation, and complete formal verification pipeline
+**Status**: 🔬 Proof-of-concept system demonstrating AI detection + automatic fixing + formal verification for PLC code
 
-**Research Status**: 📄 Publication-ready - First system combining AI + formal verification for PLC code
-
-**Impact**: 💰 $860K annual savings per facility, 99.8% time reduction, 3,620% ROI
+**Research Status**: 📄 First known system combining CodeBERT + CodeT5 + NuSMV for industrial control code
 
 **Last Updated**: November 19, 2025
 
@@ -642,9 +594,9 @@ For questions, issues, or collaboration:
 
 **Key Takeaways**:
 1. ✅ **Novel Approach**: First application of CodeBERT to PLC error detection (supervised learning)
-2. ✅ **Rigorous Validation**: 5-fold cross-validation + 35 industrial PLCs + formal verification proofs
-3. ✅ **Practical Impact**: 97.3% cost reduction, $860K/year savings, validated ROI
-4. ✅ **Open Science**: Code, dataset (285 labeled examples), and models available
+2. ✅ **Integrated Pipeline**: Combines AI detection + CodeT5 fixing + NuSMV formal verification
+3. ✅ **Proof-of-Concept**: Demonstrates feasibility of learned models for PLC code analysis
+4. ✅ **Open Science**: Code, dataset (95 labeled examples), and training approach available
 5. ✅ **Reproducible**: Detailed methodology, training parameters, hardware specs
 
 **Why Supervised Learning (Not RL)**:
@@ -652,13 +604,13 @@ For questions, issues, or collaboration:
 - Labeled data available (buggy vs. correct PLCs)
 - Pre-trained transformers (CodeBERT/CodeT5) leverage billions of code tokens
 - Deterministic behavior critical for safety-critical systems
-- 5-10x faster training, superior accuracy (96.5% vs. 70-80% RL typical)
+- Faster training and more predictable behavior than RL approaches
 
 **Research Contributions**:
 1. **Empirical**: First CodeBERT application to industrial control code
 2. **Engineering**: Novel AI + formal verification integration architecture
-3. **Dataset**: 285 labeled PLC programs (largest known PLC error dataset)
-4. **Validation**: Real-world testing on 35 industrial programs (not just lab examples)
-5. **Impact**: Quantified $860K/year ROI with mathematical correctness proofs
+3. **Dataset**: 95 labeled PLC programs with 10 error categories
+4. **Methodology**: Supervised learning approach demonstrating feasibility for safety-critical systems
+5. **Verification**: Integration of transformer models with NuSMV formal verification
 
 **Publication Potential**: Strong fit for IEEE TII, ACM SIGSOFT, EMSOFT, TACAS
