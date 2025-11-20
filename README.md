@@ -427,9 +427,8 @@ Device: NVIDIA RTX A4000
        ├─ Partially Fixed: 6 files (12%, avg 65% improvement)
        ├─ Failed to Fix: 3 files (6%)
        ├─ False Positives: 5 files (1.3%)
-       ├─ Total Processing Time: 6min 20s (avg 7.6s/file)
-       ├─ Time Savings: 61.5 hours vs manual (98.3% faster)
-       └─ Estimated Cost Savings: $5,842 in engineering time
+       └─ Total Processing Time: 6min 20s (avg 7.6s/file)
+
 
 4. Generate Report
    └─▶ verification/pipeline_results/final_report.json
